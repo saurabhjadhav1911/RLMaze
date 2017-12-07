@@ -157,7 +157,7 @@ class RLMaze():
                     cv2.putText( self.env,str(int(10000*self.Q[i][j][ac])/100.0)[0:-1],(int(b),int(a)),   cv2.FONT_HERSHEY_PLAIN, 0.8,(0, 0, 0), 1 )
 
         cv2.imshow('Environment',self.env)
-        cv2.imwrite("CustomEnv/{}E{}.jpg".format(self.epoch_num,self.cycle_num),self.env)
+        #cv2.imwrite("CustomEnv/{}E{}.jpg".format(self.epoch_num,self.cycle_num),self.env)
         cv2.waitKey(self.pause)
 
     def MoveDir(self,state,action):
